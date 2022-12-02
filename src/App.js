@@ -1,8 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
+import Cards from "./components/Cards/Cards";
 import Filters from "./components/Filters/Filters";
 
 function App() {
+
+  let pageN
+  let api = "https://rickandmortyapi.com/api/character/?page=2";
+
   return (
     <div className="App">
       <h1 className="text-center ubuntu my-4">
@@ -16,9 +21,9 @@ function App() {
           </div>
           <div className="col-8">
             <div className="row">
-              <div className="col-4">Cards</div>
-              <div className="col-4">Cards</div>
-              <div className="col-4">Cards</div>
+              <Cards />
+              <Cards />
+              <Cards />
             </div>
           </div>
         </div>
