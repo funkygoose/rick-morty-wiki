@@ -21,7 +21,7 @@ const Cards = ({ results }) => {
             </div>
           </div>
           {(() => {
-            if (status === "dead") {
+            if (status === "Dead") {
               return (
                 <div
                   className={`${styles.badge} position-absolute 
@@ -30,7 +30,7 @@ const Cards = ({ results }) => {
                   {status}
                 </div>
               );
-            } else if (status === "alive") {
+            } else if (status === "Alive") {
               return (
                 <div
                   className={`${styles.badge} position-absolute badge bg-success`}
