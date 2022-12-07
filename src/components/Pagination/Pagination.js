@@ -2,9 +2,8 @@ import React from "react";
 import ReactPaginate from 'react-paginate';
 
 const Pagination = ({ info, pageNumber ,setPageNumber }) => {
-  console.log(info.pages)
   return (
-    <ReactPaginate pageCount={info.pages}/>
+    <ReactPaginate pageCount={info?.pages == info.pages == 42}/>
   );
 };
 
