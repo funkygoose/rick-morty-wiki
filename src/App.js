@@ -27,7 +27,7 @@ function App() {
         Rick & Morty <span className="text-primary"> Wiki </span>
       </h1>
 
-      <Search setPageNumber={setPageNumber} setSearch={setSearch}/>
+      <Search setPageNumber={setPageNumber} setSearch={setSearch} />
 
       <div className="container">
         <div className="row">
@@ -37,13 +37,16 @@ function App() {
           <div className="col-8">
             <div className="row">
               <Cards results={results} />
-              
             </div>
           </div>
         </div>
       </div>
 
-      <Pagination pageNumber={pageNumber} setPageNumber={setPageNumber}/>
+      <Pagination
+        info={info}
+        pageNumber={pageNumber}
+        setPageNumber={setPageNumber}
+      />
     </div>
   );
 }
