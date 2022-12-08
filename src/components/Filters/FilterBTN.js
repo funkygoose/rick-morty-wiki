@@ -10,8 +10,8 @@ const FilterBTN = () => {
           name="flexRadioDefault"
           id="flexRadioDefault1"
         />
-        <label className="form-check-label" for="flexRadioDefault1">
-          Default radio
+        <label class="btn btn-outline-primary" for="flexRadioDefault1">
+          Single toggle
         </label>
       </div>
       <div className="form-check">
@@ -22,7 +22,7 @@ const FilterBTN = () => {
           id="flexRadioDefault2"
           checked
         />
-        <label className="form-check-label" for="flexRadioDefault2">
+        <label class="btn btn-outline-primary" for="flexRadioDefault2">
           Default checked radio
         </label>
       </div>
