@@ -1,4 +1,5 @@
 import React from "react";
+import FilterBTN from "../FilterBTN";
 
 const Status = () => {
   return (
@@ -21,7 +22,9 @@ const Status = () => {
         aria-labelledby="headingThree"
         data-bs-parent="#accordionExample"
       >
-        <div className="accordion-body"></div>
+        <div className="accordion-body">
+          <FilterBTN />
+        </div>
       </div>
     </div>
   );
