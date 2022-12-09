@@ -25,7 +25,7 @@ const Status = () => {
       >
         <div className="accordion-body">
           {status.map((items, index) => (
-            <FilterBTN key={index} />
+            <FilterBTN key={index} name="status" index={index} items={items}/>
           ))}
         </div>
       </div>
