@@ -8,6 +8,7 @@ const FilterBTN = ({ name, index, items }) => {
 
         .x:checked + label{
           background-color: #0b5ed7;
+          color:white
         }
 
           input[type="radio"] {
