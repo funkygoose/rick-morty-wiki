@@ -5,6 +5,11 @@ const FilterBTN = ({ name, index, items }) => {
     <div>
       <style jsx>
         {`
+
+        .x:checked + label{
+          background-color: #0b5ed7;
+        }
+
           input[type="radio"] {
             display: none;
           }
@@ -12,7 +17,7 @@ const FilterBTN = ({ name, index, items }) => {
       </style>
       <div className="form-check">
         <input
-          className="form-check-input"
+          className="form-check-input x"
           type="radio"
           name={name}
           id={`${name}-${index} `}
