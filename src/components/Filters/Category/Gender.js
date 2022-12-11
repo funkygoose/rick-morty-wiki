@@ -23,7 +23,7 @@ const Gender = () => {
         aria-labelledby="headingOne"
         data-bs-parent="#accordionExample"
       >
-        <div className="accordion-body">
+        <div className="accordion-body d-flex flex-wrap gap-3">
           {genders.map((items, index)=>(
             <FilterBTN key={index} name="gender" index={index} items={items}/>
           ))}

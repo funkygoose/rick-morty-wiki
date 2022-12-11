@@ -35,7 +35,7 @@ const Species = () => {
         aria-labelledby="headingTwo"
         data-bs-parent="#accordionExample"
       >
-        <div className="accordion-body">
+        <div className="accordion-body d-flex flex-wrap gap-3">
         {species.map((items, index) => (
             <FilterBTN key={index} name="species" index={index} items={items}/>
           ))}
