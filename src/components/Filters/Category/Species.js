@@ -1,6 +1,19 @@
 import React from "react";
 
 const Species = () => {
+  let species = [
+    "Human",
+    "Alien",
+    "Humanoid",
+    "Poopybutthole",
+    "Mythological",
+    "Unknown",
+    "Animal",
+    "Disease",
+    "Robot",
+    "Cronenberg",
+    "Planet",
+  ];
   return (
     <div className="accordion-item">
       <h2 className="accordion-header" id="headingTwo">
