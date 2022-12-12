@@ -18,14 +18,20 @@ const Episodes = () => {
     <div className="container">
       <div className="row">
         <h1 className="text-center mb-3">
-          Episode : 
-          <span className="text-primary"> {name === "" ? "unknown" : name}</span>
+          Episode :
+          <span className="text-primary">
+            {" "}
+            {name === "" ? "unknown" : name}
+          </span>
         </h1>
         <h5 className="text-center">
           Air Date {air_date === "" ? "unknown" : air_date}
         </h5>
       </div>
-      <div className="row"></div>
+      <div className="row">
+        <div className="col-3">Pick Episodes</div>
+        <div className="col-8"></div>
+      </div>
     </div>
   );
 };
