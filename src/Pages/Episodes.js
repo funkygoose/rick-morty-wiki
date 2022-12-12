@@ -17,7 +17,9 @@ const Episodes = () => {
   return ( 
   <div className="container">
       <div className="row">
-        <h1 className="text-center"></h1>
+        <h1 className="text-center">
+          Episode : {name}
+        </h1>
         <h5 className="text-center">
           Air Date {air_date}
         </h5>
