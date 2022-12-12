@@ -17,6 +17,17 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
+          <style jsx>
+            {`
+              button[aria-expanded="false"] > .close {
+                display: none;
+              }
+
+              button[aria-expanded="true"] > .open{
+                display:none
+              }
+            `}
+          </style>
           <i class="fas fa-bars open"></i>
           <i class="fas fa-times close"></i>
         </button>
