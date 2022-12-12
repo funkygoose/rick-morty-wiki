@@ -3,10 +3,10 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          Navbar
-        </a>
+      <div class="container">
+      <h1 className="fs-3 ubuntu navbar-brand">
+        Rick & Morty <span className="text-primary"> Wiki </span>
+      </h1>
         <button
           class="navbar-toggler"
           type="button"
@@ -18,7 +18,7 @@ const Navbar = () => {
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">
               Home
