@@ -1,6 +1,6 @@
 import React from "react";
 
-const InputGroup = ({ total }) => {
+const InputGroup = ({ total, name }) => {
   return (
     <div class="input-group mb-3">
       <select class="form-select" id="inputGroupSelect01">
