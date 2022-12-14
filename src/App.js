@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Episodes from "./Pages/Episodes";
 import Location from "./Pages/Location";
+import CardsDetails from "./components/Cards/CardsDetails";
 
 function App() {
   return (
@@ -18,8 +19,14 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/:id" element={<CardsDetails />} />
+
+
         <Route path="/episodes" element={<Episodes />} />
+        <Route path="/episodes/:id" element={<CardsDetails />} />
         <Route path="/location" element={<Location />} />
+        <Route path="/location/:id" element={<CardsDetails />} />
+
       </Routes>
     </Router>
   );
@@ -57,7 +64,7 @@ const Home = () => {
           />
           <div className="col-8">
             <div className="row">
-              <Cards results={results} />
+              <Cards page="/" results={results} />
             </div>
           </div>
         </div>
