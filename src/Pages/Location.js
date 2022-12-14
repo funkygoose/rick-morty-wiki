@@ -34,12 +34,18 @@ const Location = () => {
           </span>
         </h1>
         <h5 className="text-center">
-        Dimension : {dimension === "" ? "unknown" : dimension}
+          Dimension : {dimension === "" ? "unknown" : dimension}
         </h5>
+        
+        <h6 className="text-center">
+          Type : {type === "" ? "unknown" : type}
+        </h6>
+
+        
       </div>
       <div className="row">
         <div className="col-3">
-          <h4 className="text-center mb-4">Pick Episodes</h4>
+          <h4 className="text-center mb-4">Pick Location</h4>
           <InputGroup setID={setID} name="Episode" total={51} />
         </div>
         <div className="col-8">
