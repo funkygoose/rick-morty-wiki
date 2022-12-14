@@ -4,7 +4,7 @@ import Cards from "../components/Cards/Cards";
 const Episodes = () => {
   let [id, setID] = useState(1);
   let [info, setInfo] = useState([]);
-  let[results, setResults] = useState([]);
+  let [results, setResults] = useState([]);
   let { air_date, name } = info;
   console.log(info);
   let api = `https://rickandmortyapi.com/api/episode/${id}`;
@@ -15,7 +15,7 @@ const Episodes = () => {
       setInfo(data);
 
       let a = await Promise.all(
-        data.characters.map((x)=> {
+        data.characters.map((x) => {
           return fetch(x).then((res) => res.json());
         })
       );
@@ -39,13 +39,11 @@ const Episodes = () => {
       </div>
       <div className="row">
         <div className="col-3">
-          <div className="text-center mb-4">
-          
-          </div>
-          </div>
+          <h4 className="text-center mb-4">Pick Episodes</h4>
+        </div>
         <div className="col-8">
           <div className="row">
-            <Cards results={results}/>
+            <Cards results={results} />
           </div>
         </div>
       </div>
