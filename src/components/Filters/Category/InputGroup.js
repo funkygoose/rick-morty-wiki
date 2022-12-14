@@ -7,7 +7,7 @@ const InputGroup = ({ total }) => {
         <option selected>Choose...</option>
 
         {[...Array(total).keys()].map((x) => {
-          return <option value={x}>One</option>;
+          return <option value={x + 1}>{x + 1}</option>;
         })}
       </select>
     </div>
