@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
-import {useParams} from 'react-router-dom'
+import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 const CardsDetails = () => {
+  let { id } = useParams();
 
-  let api = ``
+  let api = `https://rickandmortyapi.com/api/character/${id}`;
 
   useEffect(() => {
     (async function () {
@@ -12,12 +13,7 @@ const CardsDetails = () => {
     })();
   }, [api]);
 
-  let { id } = useParams(); 
-  return (
-    <div>
-      The Details of the card are here
-    </div>
-  )
-}
+  return <div>The Details of the card are here</div>;
+};
 
-export default CardsDetails
+export default CardsDetails;
