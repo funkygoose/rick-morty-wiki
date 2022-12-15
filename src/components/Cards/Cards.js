@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./Cards.module.scss";
 
 const Cards = ({ results, page }) => {
@@ -11,6 +11,7 @@ const Cards = ({ results, page }) => {
       let { id, name, image, location, status } = x;
       return (
         <Link
+          style={{ textDecoration: "none" }}
           to={`${page} ${id}`}
           key={id}
           className="col-4 mb-4 position-relative"
