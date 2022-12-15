@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 const CardsDetails = () => {
   let { id } = useParams();
+  let [fetchedData, updateFetchedData] = useState([]);
 
   let api = `https://rickandmortyapi.com/api/character/${id}`;
 
