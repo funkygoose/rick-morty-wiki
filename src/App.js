@@ -50,8 +50,11 @@ const Home = () => {
       updateFetchedData(data);
     })();
   }, [api]);
+  
   return (
     <div className="App">
+
+      <h1 className="text-center mb-4">Characters</h1>
       <Search setPageNumber={setPageNumber} setSearch={setSearch} />
 
       <div className="container">
