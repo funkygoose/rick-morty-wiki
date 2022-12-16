@@ -12,15 +12,25 @@ const Pagination = ({ info, pageNumber, setPageNumber }) => {
     window.addEventListener("resize", updateDimension)
     return () => window.removeEventListener("resize", updateDimension);
   }, []);
-  
+
   return (
+    <>
+    <style jsx>
+      {`
+      @media (max-width:768px){
+        .next, .prev{
+          display:none;
+        }
+      }      
+      `}
+    </style>
     <ReactPaginate
       className="pagination justify-content-center gap-4 my-4"
       nextLabel="Next"
       forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
       previousLabel="Prev"
-      nextClassName="btn"
-      previousClassName="btn"
+      nextClassName="btn next"
+      previousClassName="btn prev"
       pageClassName="page-item"
       pageLinkClassName="page-link"
       activeClassName="active"
@@ -29,6 +39,7 @@ const Pagination = ({ info, pageNumber, setPageNumber }) => {
       }}
       pageCount={info?.pages}
     />
+    </>
   );
 };
 
