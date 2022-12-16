@@ -21,15 +21,20 @@ const Pagination = ({ info, pageNumber, setPageNumber }) => {
         .next, .prev{
           display:none;
         }
+        .pagination {
+          font-size:14px;
+        }
       }      
       `}
+  
     </style>
+
     <ReactPaginate
       className="pagination justify-content-center gap-4 my-4"
       nextLabel="Next"
       forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
       previousLabel="Prev"
-      nextClassName="btn next"
+      nextClassName="btn btn-primary next"
       previousClassName="btn prev"
       pageClassName="page-item"
       pageLinkClassName="page-link"
